@@ -3,12 +3,12 @@ info:
   title: Bulk Data File List
   version: "1.0"
 servers:
-  - url: https://test-api.service.hmrc.gov.uk
+  - url: https://test-api.service.hmrc.gov.uk/bulk-data-download
     description: Sandbox
-  - url: https://api.service.hmrc.gov.uk
+  - url: https://api.service.hmrc.gov.uk/bulk-data-download
     description: Production
 paths:
-  /bulk-data-download/list/{fileType}:
+  /list/{fileType}:
     get:
       responses:
         "200":
