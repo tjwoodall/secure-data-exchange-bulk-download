@@ -16,7 +16,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/response"
+                type: array
+                items:
+                  $ref: "#/components/schemas/bulk-download"
               example:
                 - filename: file1.xml.gz
                   downloadURL: https://some.sdes.domain/file1.xml.gz
@@ -42,7 +44,7 @@ paths:
         description: A type of the information files to download e.g. `TARIFF-DAILY`, `TARIFF-MONTHLY`, `TARIFF-ANNUAL`.
 components:
   schemas:
-    response:
+    bulk-download:
         type: object
         properties:
           filename:
