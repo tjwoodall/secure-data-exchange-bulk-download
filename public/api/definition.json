@@ -1,5 +1,4 @@
 {
-  "scopes": [],
   "api": {
     "name": "Bulk Data File List",
     "description": "An API informing about files available for download from Secure Data Exchange Services.",
