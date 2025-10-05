@@ -29,7 +29,7 @@ paths:
       summary: List available files
       description: |
         List the files of the given type that are available for download.
-      operationId: List available files
+      operationId: Listavailablefiles
       parameters:
         - $ref: '#/components/parameters/header_Accept'
         - $ref: '#/components/parameters/header_Authorization'
