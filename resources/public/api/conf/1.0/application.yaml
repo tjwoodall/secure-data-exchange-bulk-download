@@ -34,7 +34,7 @@ paths:
         - $ref: '#/components/parameters/header_Accept'
         - $ref: '#/components/parameters/header_Authorization'
       security:
-        - applicationRestricted: []
+        - Application-Restricted: []
     parameters:
       - name: fileType
         in: path
@@ -76,7 +76,7 @@ components:
         example: Bearer 59fc92c1cdf0b8ef1f138a702effdbd2
   examples: {}
   securitySchemes:
-    applicationRestricted:
+    Application-Restricted:
       type: oauth2
       description: |
         HMRC supports OAuth 2.0 for authenticating application restricted API requests using an OAuth 2.0 Bearer Token in the AUTHORIZATION header.
